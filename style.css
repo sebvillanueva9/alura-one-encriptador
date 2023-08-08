@@ -1,0 +1,269 @@
+*{
+    background:#F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    width: 100%;
+}
+
+header {
+    padding: 40px;
+    width: 8%;
+    height: 8%;
+}
+
+main{
+    display: flex;
+    margin-left: 12%;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mainText {
+    border: none;
+    outline: none;
+    resize: none;
+    color: #0A3871;
+    width: 100%;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.mainText:focus {
+    color: #0A3871;
+}
+
+.mainText::placeholder {
+    color: #0A3871;
+}
+
+.info {
+    display: flex;
+}
+
+.bi-exclamation-circle-fill{
+    font-size: 16px;
+    color: #495057;
+}
+
+.info h6 {
+    font-size: 12px;
+    color: #495057;
+    display: inline-block;
+    margin-left: -92%;
+}
+
+.buttons {
+    margin-top: auto;
+    display: inline-block;
+}
+
+.encryptButton {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    display: inline-block;
+}
+
+.encryptButton:hover {
+    transform: scale(1.1);
+}
+
+.decryptButton {
+    color: #0A3871;
+    font-size: 16px;
+    text-align: center;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.decryptButton:hover {
+    transform: scale(1.1);
+}
+
+.outputText {
+    background-color: white;
+    background-image: url(images/textboxlogo.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid white;
+    border-radius: 24px;
+    outline: none;
+    resize: none;
+    margin-top: -20%;
+    margin-left: 40%;
+    width: 60%;
+    color: #495057;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.noneMessages h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #343A40;
+    text-align: center;
+    margin-top: -30%;
+    margin-left: 20%;
+    line-height: 1em;
+}
+
+.noneMessages h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #495057;
+    text-align: center;
+    margin-left: 20%;
+    line-height: 1em;
+}
+
+.copyButton {
+    color: #0A3871;
+    font-size: 16px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #0A3871;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    margin-left: 50%;
+    display: none;
+}
+
+.copyButton:hover {
+    transform: scale(1.1);
+}
+
+/* Media Query for Tablets and Mobile Devices */
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+  }
+
+  header {
+    width: 15%;
+    height: 15%;
+    margin-left: -2%;
+  }
+
+  .mainText {
+    width: 80%;
+    height: 70%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .encryptButton {
+    margin-right: 5%;
+    margin-left: -10%;
+  }
+
+
+  .outputText {
+    background-image: none;
+    margin-top: 5%;
+    width: 90%;
+    height: 10em;
+    margin-left: 0;
+  }
+
+  .noneMessages {
+    text-align: center;
+    margin-left: -25%;
+  }
+
+  .outputButtons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .copyButton {
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 2em;
+  }
+}
+  
+  @media only screen and (max-width: 480px) {
+
+    * {
+        margin-top: 2%;
+    }
+
+    header {
+        width: 25%;
+        height: 25%;
+        margin-left: -10%;
+    }
+
+    .mainText,
+    .outputText {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+
+    .mainText {
+        height: 300px;
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .outputText {
+      background-image: none;
+      margin-top: 10%;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      margin-left: -5%;
+    }
+
+    .noneMessages {
+        text-align: center;
+        margin-left: -25%;
+        margin-top: -70%;
+    }
+    
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .decryptButton {
+      margin-left: -15%;
+    }
+  
+    .outputButtons {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+    }
+  
+    .copyButton {
+      margin-left: 3%;
+      margin-top: 20%;
+      width: 80%;
+    }
+  }
+  
